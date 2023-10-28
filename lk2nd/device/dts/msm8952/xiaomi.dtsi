@@ -1,0 +1,11 @@
+// SPDX-License-Identifier: GPL-2.0-only
+
+#include <lk2nd.dtsi>
+
+&lk2nd {
+	xiaomi-santoni {
+		model = "Xiaomi Redmi 4X";
+		compatible = "xiaomi,santoni", "qcom,msm8940";
+		lk2nd,match-cmdline = "* board_id=S88536BA2:*";
+	};
+};
