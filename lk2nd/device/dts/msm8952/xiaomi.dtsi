@@ -3,9 +3,16 @@
 #include <lk2nd.dtsi>
 
 &lk2nd {
+	/************************************************
+	 * There are several board version of Redmi 4X: *
+	 *                                              *
+	 * - MAE136 (S88536AA2): Redmi 4X (China?)      *
+	 * - MAG138 (S88536BA2): Redmi 4X (Global)      *
+	 * - MAI132 (S88536CA2): Redmi 4 (India)        *
+	 ************************************************/
 	xiaomi-santoni {
 		model = "Xiaomi Redmi 4X";
 		compatible = "xiaomi,santoni", "qcom,msm8940";
-		lk2nd,match-cmdline = "* board_id=S88536BA2:*";
+		lk2nd,match-cmdline = "* board_id=S88536*";
 	};
 };
