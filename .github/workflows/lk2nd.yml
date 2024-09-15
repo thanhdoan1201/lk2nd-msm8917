@@ -13,7 +13,7 @@ on:
       artifacts:
         type: string
         required: true
-
+workflow_dispatch:
 jobs:
   build:
     name: ${{ inputs.platform }}
